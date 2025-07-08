@@ -1,0 +1,43 @@
+name: tidytask_new
+description: "TidyTask is a beautiful and powerful to-do list app built with Flutter, suitable for students, workers, and household task organizers. Includes dark mode, reminders, SQLite storage, and custom themes."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  shared_preferences: ^2.2.2
+  provider: ^6.1.5
+
+  flutter_local_notifications:
+    git:
+      url: https://github.com/MaikuB/flutter_local_notifications.git
+      path: flutter_local_notifications
+      ref: master
+
+  timezone: ^0.10.0
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/tidytask.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/tidytask.png
